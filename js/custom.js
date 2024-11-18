@@ -58,7 +58,16 @@ $(function () {
         arrows: false,
         dots: false,
         slidesToShow: 4,
-
+        responsive: [
+            {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 2,
+                    infinite: true,
+                }
+            },
+        ]
     });
 
     $('.c_arrows .prev').on('click', function () {
